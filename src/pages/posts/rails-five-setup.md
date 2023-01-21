@@ -1,20 +1,23 @@
 ---
+layout: ../../layouts/MarkdownPostLayout.astro
 title: 'Setting Up A Rails 5 Application With Postgres & RSpec'
 pubDate: 2023-01-23
-description: 'A basic cheat sheet for a Rails 6 project at Turing School.'
+description: 'A basic cheat sheet for a Rails 5 project at Turing School.'
 author: 'Anthony Ongaro'
 tags: ["rails 5", "postgres", "rspec"]
 ---
-# New Rails Project
+## New Rails Project
 Published on: 2023-01-20
 
 Begin in terminal
-`rails new application_name -T -d="postgresql" --skip-spring --skip-turbolinks`
+```
+rails new application_name -T -d="postgresql" --skip-spring --skip-turbolinks
+```
 
 Command breakdown:
-`-T` remove standard testing (add RSpec later)
-`-d="postgresql"` use PostgreSQL for database (SQLite3 by default)
-`--skip-spring` & `--skip-turbolinks` skip things we don't need at this scale
+- `-T` remove standard testing (add RSpec later)
+- `-d="postgresql"` use PostgreSQL for database (SQLite3 by default)
+- `--skip-spring` & `--skip-turbolinks` skip things we don't need at this scale
 
 ## Ruby Gems
 ### Add Gems
@@ -41,10 +44,10 @@ Run `bundle` to install the gems from Gemfile
 **Install RSpec**:
 `rails generate rspec:install`
 
-**In `.gitignore`:**
+**In .gitignore:**
 Add `/coverage/` directory to bottom of file to ignore SimpleCov
 
-**In `rails_helper.rb`:**
+**In rails_helper.rb:**
 Add code to *top* of file for SimpleCov
 ```ruby
 require 'simplecov'
@@ -63,10 +66,14 @@ end
 
 # Connect To GitHub Repo
 Create New GitHub Repository, Add Remote Origin
-`git remote add origin git@github.com:<user_name>/<repo_name>.git`
+```
+git remote add origin git@github.com:<user_name>/<repo_name>.git
+```
 
 Create Local Initial Commit, Push To Origin
-`git push -u origin main`
+```
+git push -u origin main
+```
 
 Probably create a new branch and then...
 

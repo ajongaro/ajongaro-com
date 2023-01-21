@@ -1,7 +1,5 @@
 ---
-import '../styles/global.css';
-import Footer from '../components/Footer.astro'
-import Header from '../components/Header.astro'
+import BaseLayout from '../layouts/BaseLayout.astro';
 
 const pageTitle = "About Me";
 const identity = {
@@ -17,43 +15,24 @@ const happy = true;
 const finished = false;
 const goal = 3;
 ---
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>{pageTitle}</title>
-	</head>
-	<body>
-    <Header />
-		<h1>{pageTitle}</h1>
-    <p>
-      I'm a {identity.occupation} with a background in creative entrepreneurship, writing, and nonprofit marketing. Currently studying back-end software engineering at Turing School of Software & Design's ACCET-accredited program.<br>
-    </p>
-    <p>
-      <ul>
-        <li>🌱 I've spent the last 7 years making videos, writing, and building on the web</li>
-        <li>📖 I love reading about philosophy, habits, coding, and everything from 3D printing to cacti cultivation</li>
-        <li>💬 Tell me your favorite vim motions, project ideas, and anything you're passionate about</li>
-      </ul>
-    </p>
-    <b>My Current Skills:</b>
+<BaseLayout pageTitle={pageTitle}>
+  <p>
+    I'm a {identity.occupation} with a background in creative entrepreneurship, writing, and nonprofit marketing. Currently studying back-end software engineering at Turing School of Software & Design's ACCET-accredited program.<br>
+  </p>
+  <p>
     <ul>
-      {skills.map((skill) => <li class="skill">{skill}</li>)}
+      <li>🌱 I've spent the last 7 years making videos, writing, and building on the web</li>
+      <li>📖 I read about philosophy, habits, coding, and everything from 3D printing to cacti cultivation</li>
+      <li>💬 Tell me your favorite vim motions, project ideas, and anything you're passionate about</li>
     </ul>
+  </p>
+  <b>My Current Skills:</b>
+  <ul>
+    {skills.map((skill) => <li class="skill">{skill}</li>)}
+  </ul>
 
-    <b>I'm Learning:</b>
-    <ul>
-      {learning.map((skill) => <li class="skill">{skill}</li>)}
-    </ul>
- 
-    {happy && <p>I am happy to be learning Astro!</p>}
-    {finished && <p>I am finished with this tutorial!</p>}
-    {goal === 3 ? <p>My goal is to finish in 3 days.</p> : <p>My goal is not 3 days.</p>}
-    <Footer />
-		<script>
-			import "../scripts/menu.js"
-		</script>
-	</body>
-</html>
+  <b>I'm Learning:</b>
+  <ul>
+    {learning.map((skill) => <li class="skill">{skill}</li>)}
+  </ul>
+</BaseLayout>
