@@ -1,9 +1,9 @@
 ---
+import '../styles/global.css';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import Greeting from '../components/Greeting.jsx';
-const pageTitle = 'Home Page';
+const pageTitle = 'AJOngaro';
 ---
 <BaseLayout pageTitle={pageTitle}>
-	<h2>Index Page, Realistically</h2>
-	<Greeting client:load messages={["Hi", "Hello", "Howdy", "Hey there"]} />
+	<Greeting messages={["Hi", "Hello", "Howdy", "Hey there"]} />
 </BaseLayout>

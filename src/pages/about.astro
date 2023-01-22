@@ -10,20 +10,17 @@ const identity = {
 };
 const skills = ["HTML", "CSS", "Ruby", "Rails", "PostgreSQL"];
 const learning = ["JavaScript", "Python"];
-
-const happy = true;
-const finished = false;
-const goal = 3;
 ---
 <BaseLayout pageTitle={pageTitle}>
   <p>
-    I'm a {identity.occupation} with a background in creative entrepreneurship, writing, and nonprofit marketing. Currently studying back-end software engineering at Turing School of Software & Design's ACCET-accredited program.<br>
+    I'm a {identity.occupation} with a background in creative entrepreneurship, writing, and nonprofit marketing.
+    Currently studying back-end software engineering at Turing School of Software & Design's ACCET-accredited program.
   </p>
   <p>
     <ul>
-      <li>🌱 I've spent the last 7 years making videos, writing, and building on the web</li>
-      <li>📖 I read about philosophy, habits, coding, and everything from 3D printing to cacti cultivation</li>
-      <li>💬 Tell me your favorite vim motions, project ideas, and anything you're passionate about</li>
+      <li>I've spent the last 7 years making videos, writing, and building on the <a href="https://www.breakthetwitch.com/">web</a></li>
+      <li>I'm reading about philosophy, habits, coding, and cacti cultivation</li>
+      <li>Tell me your favorite vim motions, project ideas, and anything you're passionate about</li>
     </ul>
   </p>
   <b>My Current Skills:</b>
@@ -34,5 +31,10 @@ const goal = 3;
   <b>I'm Learning:</b>
   <ul>
     {learning.map((skill) => <li class="skill">{skill}</li>)}
+  </ul>
+
+  <b>My Hobbies:</b>
+  <ul>
+    {identity.hobbies.map((hobby) => <li class="skill">{hobby}</li>)}
   </ul>
 </BaseLayout>
