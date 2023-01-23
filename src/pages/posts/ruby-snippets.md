@@ -6,7 +6,6 @@ description: 'Helpful Ruby snippets for pry, rspec, and controller creation'
 author: 'Anthony Ongaro'
 tags: ["ruby", "snippets", "json"]
 ---
-# Artisan Hand-Crafted Ruby Snippet Collection
 <p>Put these into your ruby.json file or snippets.code-snippets in VS Code</p>
 
 ## Insert a Pry

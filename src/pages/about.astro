@@ -6,14 +6,14 @@ const identity = {
 	firstName: "Anthony",
 	lastName: "Ongaro",
 	occupation: "Software Engineer",
-	hobbies: ["cacti cultivation", "rope flow", "making music"]
+	hobbies: ["Cacti Cultivation", "Rope Flow", "Music Production"]
 };
-const skills = ["HTML", "CSS", "Ruby", "Rails", "PostgreSQL"];
-const learning = ["JavaScript", "Python"];
+const skills = ["Vim", "HTML", "CSS", "Ruby", "Rails", "PostgreSQL", "Heroku/Netlify", "RESTful Routes"];
+const learning = ["JavaScript", "TypeScript", "Python"];
 ---
 <BaseLayout pageTitle={pageTitle}>
   <p>
-    I'm a {identity.occupation} with a background in creative entrepreneurship, writing, and nonprofit marketing.
+    I'm {identity.firstName}, a {identity.occupation} with a background in creative entrepreneurship, writing, and marketing.
     Currently studying back-end software engineering at Turing School of Software & Design's ACCET-accredited program.
   </p>
   <p>
@@ -23,18 +23,24 @@ const learning = ["JavaScript", "Python"];
       <li>Tell me your favorite vim motions, project ideas, and anything you're passionate about</li>
     </ul>
   </p>
-  <b>My Current Skills:</b>
-  <ul>
-    {skills.map((skill) => <li class="skill">{skill}</li>)}
-  </ul>
-
-  <b>I'm Learning:</b>
-  <ul>
-    {learning.map((skill) => <li class="skill">{skill}</li>)}
-  </ul>
-
-  <b>My Hobbies:</b>
-  <ul>
-    {identity.hobbies.map((hobby) => <li class="skill">{hobby}</li>)}
-  </ul>
+  <div id="tri-list">
+    <div id="left-third">
+      <h3>My Current Skills:</h3>
+      <ul>
+        {skills.map((skill) => <li class="skill">{skill}</li>)}
+      </ul>
+    </div>
+    <div id="middle-third">
+      <h3>I'm Learning:</h3>
+      <ul>
+        {learning.map((skill) => <li class="skill">{skill}</li>)}
+      </ul>
+    </div>
+    <div id="right-third">
+      <h3>My Hobbies:</h3>
+      <ul>
+        {identity.hobbies.map((hobby) => <li class="skill">{hobby}</li>)}
+      </ul>
+    </div>
+  </div>
 </BaseLayout>

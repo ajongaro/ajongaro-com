@@ -7,7 +7,6 @@ author: 'Anthony Ongaro'
 tags: ["rails 5", "postgres", "rspec"]
 ---
 ## New Rails Project
-Published on: 2023-01-20
 
 Begin in terminal
 ```
@@ -29,11 +28,11 @@ group :development, :test do
   gem 'rspec-rails'
   gem 'capybara'
   gem 'launchy' # save_and_open_page
-	gem 'faker'
-	gem 'factory_bot_rails'
+  gem 'faker'
+  gem 'factory_bot_rails'
   gem 'simplecov'
   gem 'shoulda-matchers'
-	gem 'orderly' # tests order of appearance on webpage
+  gem 'orderly' # tests order of appearance on webpage
 end
 ```
 
