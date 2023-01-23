@@ -1,29 +1,8 @@
 ---
 import BaseLayout from './BaseLayout.astro';
-const { tags } = Astro.props;
+import YouTubeVid from '../components/YouTubeVid.astro';
 const { frontmatter } = Astro.props;
 ---
-<style>
-  a {
-    color: #00539F;
-  }
-
-  .tags {
-    display: flex;
-    flex-wrap: wrap;
-    margin: 0 auto;
-  }
-
-  .tag {
-    margin: 0.25em;
-    border: dotted 1px #a1a1a1;
-    border-radius: .5em;
-    padding: .5em 1em;
-    font-size: 1.15em;
-    background-color: #F8FCFD;
-  }
-</style>
-
 <BaseLayout pageTitle={frontmatter.title}>
   <p>{frontmatter.description}</p>
   <p>Written by {frontmatter.author}, on {frontmatter.pubDate.slice(0,10)}</p>
@@ -32,5 +11,7 @@ const { frontmatter } = Astro.props;
      <p class="tag"><a href={`/tags/${tag}`}>{tag}</a></p>
      ))}
   </div>
+
+  { frontmatter.video && <YouTubeVid video={frontmatter.video} /> }
   <slot />
 </BaseLayout>
