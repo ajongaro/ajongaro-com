@@ -18,26 +18,26 @@ const learning = ["JavaScript", "TypeScript", "Python"];
   </p>
   <p>
     <ul>
-      <li>I've spent the last 7 years making videos, writing, and building on the <a href="https://www.breakthetwitch.com/">web</a></li>
+      <li>I've spent the last 7 years making <a href="https://www.youtube.com/@aongaro">videos</a> and building on the <a href="https://www.breakthetwitch.com/">web</a></li>
       <li>I'm reading about philosophy, habits, coding, and cacti cultivation</li>
       <li>Tell me your favorite vim motions, project ideas, and anything you're passionate about</li>
     </ul>
   </p>
-  <div id="tri-list">
-    <div id="left-third">
-      <h3>My Current Skills:</h3>
+  <div id="cards">
+    <div id="card">
+      <h3>Current Skills</h3>
       <ul>
         {skills.map((skill) => <li class="skill">{skill}</li>)}
       </ul>
     </div>
-    <div id="middle-third">
-      <h3>I'm Learning:</h3>
+    <div id="card">
+      <h3>Learning</h3>
       <ul>
         {learning.map((skill) => <li class="skill">{skill}</li>)}
       </ul>
     </div>
-    <div id="right-third">
-      <h3>My Hobbies:</h3>
+    <div id="card">
+      <h3>Hobbies</h3>
       <ul>
         {identity.hobbies.map((hobby) => <li class="skill">{hobby}</li>)}
       </ul>
