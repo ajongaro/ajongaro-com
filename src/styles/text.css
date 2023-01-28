@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Recursive:wght@100;400;700&display=swap');
+
+h1 {
+  margin: 1rem 0;
+  font-size: 2rem;
+  color: #364047;
+}
+
+h3 {
+  margin: 1rem 0;
+  font-size: 1.25rem;
+  color: #364047;
+}
+
+a {
+  color: #364047;
+  box-shadow: 0 -0.2em 0 #2e75b390 inset;
+  text-decoration: none;
+  font-weight: 400;
+}
+
+a:hover {
+  text-decoration: none;
+  transition: 1s;
+  box-shadow: 0 -0.5em 0 #8ec07c50 inset;
+}
+
+
+a.social {
+  padding: 0.5rem 1rem;
+  background: #36404710;
+  box-shadow: none;
+  color: #b16286;
+  text-decoration: none;
+}
+
+/* Code Blocks */ 
+code {
+  font-family: 'Fira Mono', 'Monospace';
+  padding: 2px;
+  border-radius: 10%;
+}
+
+pre {
+  background-color: #282828;   
+  color: #faf8f1;               
+  padding: 1em;
+  box-shadow: 1pt 1pt 3pt #677696; 
+}
