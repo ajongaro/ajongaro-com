@@ -1,0 +1,8 @@
+---
+const response = await fetch('https://owen-wilson-wow-api.onrender.com/wows/random');
+const data = await response.json();
+---
+
+<audio controls>
+  <source src={data[0].audio} type="audio/mpeg">
+</audio>

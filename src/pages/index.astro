@@ -1,11 +1,11 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import Greeting from '../components/Greeting.jsx';
+import Wow from '../components/Wow.astro';
 ---
 <BaseLayout>
 	<Greeting messages={["Hi", "Hello", "Hola", "Hey there"]} />
-	I'm building this site to learn TypeScript and CSS principles, and explore the Astro framework.
-	Sure, there are some helpful blog posts already. Yes! You can even click the links below to see some of my other projects.
-	<p>But a copywriting magnum opus, this is certainly not.</p>
-	Enjoy.
+	I'm building this site to explore the Astro framework and share helpful things I learn about software engineering. Enjoy.<br>
+	Here's what Owen Wilson thinks about that:<br>
+	<Wow/>
 </BaseLayout>
