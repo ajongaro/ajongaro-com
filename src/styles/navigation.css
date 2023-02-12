@@ -44,8 +44,9 @@
 
 @media screen and (min-width: 636px) {
   .nav-links {
-    margin-left: 5em;
-    display: block;
+    /* margin-left: 5em; */
+    display: flex;
+    flex-wrap: nowrap;
     position: static;
     width: auto;
     background: none;
