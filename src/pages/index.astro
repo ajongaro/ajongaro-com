@@ -1,10 +1,11 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import Greeting from '../components/Greeting.jsx';
+import Banner from '/Banner.jpg';
 ---
 <BaseLayout>
 	<Greeting messages={["Hi", "Hello", "Hola", "Hey there"]} />
-	<img class="hero" src="/public/banner.jpg">
+	<img class="hero" src={Banner} alt="Anthony Ongaro at the Alhambra, sitting on steps of water rails."/>
 
 	I'm a creative entrepreneur turned software engineer with two decades of experience building online and in the workshop.
 	I believe in holistic project ownership, writing empathetic and stylish code, and working collaboratively to solve interesting problems. 
