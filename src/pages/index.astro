@@ -6,14 +6,7 @@ import Name from '../components/Name.jsx';
 ---
 <BaseLayout>
 	<script>
-		const title = document.getElementById("title");
-
-		title.onmouseover = function() {
-			title.innerHTML = "Hi, I'm Anthony James Ongaro!";
-		};
-		title.onmouseout = function() {
-			title.innerHTML = "Hi, I'm Anthony J. Ongaro!";
-		};
+		import "../scripts/name.js"
 	</script>
 
 	<img class="hero" src={Banner} alt="Anthony Ongaro at the Alhambra, sitting on steps of water rails."/>
