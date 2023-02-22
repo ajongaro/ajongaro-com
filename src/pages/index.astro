@@ -2,11 +2,22 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import Greeting from '../components/Greeting.jsx';
 import Banner from '/banner.jpg';
+import Name from '../components/Name.jsx';
 ---
 <BaseLayout>
-	<Greeting messages={["Hi", "Hello", "Hola", "Hey there"]} />
-	<img class="hero" src={Banner} alt="Anthony Ongaro at the Alhambra, sitting on steps of water rails."/>
+	<script>
+		const title = document.getElementById("title");
 
+		title.onmouseover = function() {
+			title.innerHTML = "Hi, I'm Anthony James Ongaro!";
+		};
+		title.onmouseout = function() {
+			title.innerHTML = "Hi, I'm Anthony J. Ongaro!";
+		};
+	</script>
+
+	<img class="hero" src={Banner} alt="Anthony Ongaro at the Alhambra, sitting on steps of water rails."/>
+	<h1 id="title">Hello, I'm Anthony J. Ongaro</h1>
 	I'm a creative entrepreneur turned software engineer with two decades of experience building online and in the workshop.
 	I believe in holistic project ownership, writing empathetic and stylish code, and working collaboratively to solve interesting problems. 
 	Thanks for stopping by - I hope you'll have a look around.

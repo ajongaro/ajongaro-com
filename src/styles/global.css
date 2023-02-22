@@ -31,7 +31,6 @@ img {
   box-sizing: border-box;
 }
 
-
 .tags {
   display: flex;
   flex-wrap: wrap;
@@ -41,20 +40,19 @@ img {
 .tag {
   margin: 0.5em;
   padding: 0.5em 1em;
-  border-radius: 1em;
   font-size: .75em;
-  background-color: #36404710; 
-  color: #98971a;
+  border-radius: 1em;
+  color: #689d6a; 
+  background-color: #8ec07c80;
 }
 
 .tag a {
   display: block;
   text-align: center;
-  text-decoration: none;
   box-shadow: none;
-  color: #98971a;
-  font-size: 1rem;
-  text-transform: lowercase;
+  font-size: .75rem;
+  font-weight: 700;
+  text-transform: uppercase;
 }
 
 /* YouTube Video */
@@ -71,6 +69,22 @@ img {
 #card {
   flex: 1;
   background-color: #36404710; 
-  margin: 0 1.5em 0 0;
+  margin: 1.5em 1.5em 0 0;
   padding: .25em 1em .25em;
 } 
+
+.container {
+	background: pink;
+	height: 50vh;
+	width: 100%;
+	padding: 0.5em;
+  margin: 1rem 0;
+	display: flex;
+	flex-direction: row;
+}
+
+.item {
+	background: lightblue;
+  width: 50%;
+	margin: 0.5em;
+}
