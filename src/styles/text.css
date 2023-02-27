@@ -43,13 +43,12 @@ a.social {
 /* Code Blocks */ 
 code {
   font-family: 'Recursive', 'Monospace';
-  padding: 2px;
+  padding: .25em 0;
   border-radius: 10%;
+  color: #b16286;
 }
 
-pre {
-  background-color: #282828;   
-  color: #faf8f1;               
+pre.astro-code {
   padding: 1em;
-  box-shadow: 1pt 1pt 3pt #677696; 
+  box-shadow: 1pt 1pt 3pt #67769680; 
 }

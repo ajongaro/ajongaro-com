@@ -2,7 +2,7 @@
 layout: ../../layouts/MarkdownPostLayout.astro
 title: 'Getting Started with Ruby Exercises'
 pubDate: 2023-01-23
-description: 'Instructions to prepare for Mod1 at Turing School'
+description: 'Instructions to prepare for Mod1 at Turing School.'
 author: 'Anthony Ongaro'
 tags: ["turing", "mod1", "ruby-exercises"]
 video: YQ6CqFkrPKY

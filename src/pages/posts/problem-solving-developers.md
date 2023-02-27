@@ -2,7 +2,7 @@
 layout: ../../layouts/MarkdownPostLayout.astro
 title: 'Problem-solving For Developers'
 pubDate: 2022-09-22
-description: 'My notes on a helpful Fireship YouTube video'
+description: 'My notes on a helpful Fireship YouTube video.'
 author: 'Anthony Ongaro'
 tags: ["problem-solving", "fireship", "video-notes"]
 ---

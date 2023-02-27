@@ -2,7 +2,7 @@
 layout: ../../layouts/MarkdownPostLayout.astro
 title: 'My Custom Ruby Snippets'
 pubDate: 2023-01-23
-description: 'Helpful Ruby snippets for pry, rspec, and controller creation'
+description: 'Helpful Ruby snippets for pry, rspec, and controller creation.'
 author: 'Anthony Ongaro'
 tags: ["ruby", "snippets", "json"]
 ---
