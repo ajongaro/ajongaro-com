@@ -9,28 +9,31 @@ tags: ["problem-solving", "fireship", "video-notes"]
 [Watch on YouTube](https://www.youtube.com/watch?v=UFc-RPbq8kg)
 
 ### 1. Identify and Understand Problem
+
 "If I had an hour to solve a problem, I'd spend 55 minutes thinking about the problem, and 5 minutes thinking about solutions." - Albert Einstein
-	
-	1. Start with context
-	2. Explain why it's an issue / what you're trying to accomplish
-	3. Summarize why problem should be solved
+
+ 1. Start with context
+ 2. Explain why it's an issue / what you're trying to accomplish
+ 3. Summarize why problem should be solved
 
 ### 2. Research and Refine
+
 Start Googling...
 
-	1. Research other people's solutions as a starting point
-	2. Look for other sources of learning like YouTube videos, and other free online sources
-	3. Make sure you confidently understand what the code does before using it
-	4. Discuss the idea with other developers
-	5. Refine problem into *smaller* problems
-	6. Weigh pros and cons of different approaches
+ 1. Research other people's solutions as a starting point
+ 2. Look for other sources of learning like YouTube videos, and other free online sources
+ 3. Make sure you confidently understand what the code does before using it
+ 4. Discuss the idea with other developers
+ 5. Refine problem into *smaller* problems
+ 6. Weigh pros and cons of different approaches
 
 Number 5 above is arguably the most important: break down a problem into it's smallest logical components and then work on the ones you can figure out first. Start with what you know how to do and build on that.
 
 ### 3. Write Pseudocode
+
 Focus on logic (how it works and flows), NOT syntax (proper code formatting). Work through what you want to achieve using plain english language as though you were writing code.
 
-```
+```ruby
 age is 40
 
 if age is more than 40
@@ -56,34 +59,36 @@ else
 end
 ```
 
-	1. Added benefit is that you can work on naming your variables and methods well before worrying about other stuff
-	2. Creates general idea on how to implement the code
-	3. If working with API, use Insomnia to implement code before making requests
+ 1. Added benefit is that you can work on naming your variables and methods well before worrying about other stuff
+ 2. Creates general idea on how to implement the code
+ 3. If working with API, use Insomnia to implement code before making requests
 
 ### 4. Test Driven Development
 
-	1. Write good tests that will be helpful for making sure it's working
-	2. When possible, write tests before writing code
-	3. Use red/green/refactor, prevents regression and allows refactoring
+ 1. Write good tests that will be helpful for making sure it's working
+ 2. When possible, write tests before writing code
+ 3. Use red/green/refactor, prevents regression and allows refactoring
 
 ### 5. Implement The Solution
 
-	1. Get to passing code as quickly as possible
-	2. Doesn't have to be perfect
-	3. Leverage dopamine to see success
-	4. Rush to implement initial code like a hackathon
-	5. Make sure the problem _can_ be solved.
+ 1. Get to passing code as quickly as possible
+ 2. Doesn't have to be perfect
+ 3. Leverage dopamine to see success
+ 4. Rush to implement initial code like a hackathon
+ 5. Make sure the problem *can* be solved.
 
 ### 6. Reflect and Improve
+
 It's easier to improve existing code that works vs write new code
 
-	1. Improve readability by naming better
-	2. Add comments
-	3. Remove duplication
-	4. Optimize time/space  complexity
-	5. Add error handling
+ 1. Improve readability by naming better
+ 2. Add comments
+ 3. Remove duplication
+ 4. Optimize time/space  complexity
+ 5. Add error handling
 
 ### 7. Practice
+
 Unlimited problems to solve, so practice solving problems. You can get good at problem solving just like getting good at a musical instrument. It takes time and practice, and your brain will start changing to understand the types of problems you're working on solving. *Every aspect* of what you're learning and doing can and will improve.
 
 - You'll get faster at typing
@@ -93,4 +98,5 @@ Unlimited problems to solve, so practice solving problems. You can get good at p
 - You'll even get better at Googling and knowing what to look for to find your answer
 
 ### 8. Get Feedback From Other Developers
+
 <img width="712" alt="image" src="https://user-images.githubusercontent.com/43623494/190416953-b15806af-9929-4b42-b5ab-c23075175098.png">

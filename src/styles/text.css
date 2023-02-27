@@ -8,7 +8,7 @@ h1 {
 }
 
 h3 {
-  margin: 1rem 0;
+  margin: 1rem 0 .25rem;
   font-size: 1.25rem;
   color: #364047;
 }
@@ -18,6 +18,10 @@ a {
   box-shadow: 0 -0.2em 0 #2e75b390 inset;
   text-decoration: none;
   font-weight: 400;
+}
+
+.post-description {
+  padding: .5rem 0;
 }
 
 a:hover {

@@ -1,4 +1,8 @@
 ---
-const { title, url, pubDate } = Astro.props;
+const { title, description, url, pubDate } = Astro.props;
 ---
-<li><a href={url}>{title}</a>, {pubDate.slice(0,10)}</li>
+<h3><a href={url}>{title}</a></h3>
+Published: {pubDate.slice(0,10)}<br>
+<div class="post-description">
+  {description}
+</div>

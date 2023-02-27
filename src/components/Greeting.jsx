@@ -6,7 +6,7 @@ export default function Greeting({messages}) {
   const [greeting, setGreeting] = useState(randomMessage());
   return (
     <div class="greeting"> 
-      <h1>{greeting}! I'm Anthony J. Ongaro</h1>
+      {greeting}
     </div>
   )
 }
