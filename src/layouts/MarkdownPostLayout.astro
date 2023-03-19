@@ -7,9 +7,7 @@ const { frontmatter } = Astro.props;
   <p>{frontmatter.description}</p>
   <p>Written by {frontmatter.author}, on {frontmatter.pubDate.slice(0,10)}</p>
   <div class="tags">
-    {frontmatter.tags.map((tag) => (
-     <p class="tag"><a href={`/tags/${tag}`}>{tag}</a></p>
-     ))}
+    {frontmatter.tags.map((tag) => ( <p class="tag"><a href={`/tags/${tag}`}>{tag}</a></p>))}
   </div>
 
   { frontmatter.video && <YouTubeVid video={frontmatter.video} /> }

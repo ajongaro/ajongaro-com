@@ -83,6 +83,15 @@ img {
 	flex-direction: row;
 }
 
+.love-fern {
+  flex: 1em;
+	background-image: url("love-fern.jpg");
+  background-position: center;
+  background-size: cover;
+  width: 50%;
+	margin: 0.5em;
+}
+
 .item {
 	background: lightblue;
   width: 50%;
