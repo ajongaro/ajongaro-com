@@ -1,0 +1,4 @@
+! adguard allowed list
+! v1.0
+||kit.com^
+||convertkit.com^
